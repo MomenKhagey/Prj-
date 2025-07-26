@@ -183,6 +183,9 @@ body {
   border-bottom: 2px solid;
   outline: none;
 }
+.subscribe .row .smail::placeholder {
+  color: white;
+}
 .subscribe input[type="submit"] {
   border: none;
 

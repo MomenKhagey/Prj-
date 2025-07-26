@@ -1,0 +1,196 @@
+:root {
+  --secondary-dark-color: #19283f;
+  --main-transition: 0.3s;
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --section-color: #ececec;
+  --yellow-color: yellow;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Commpenents */
+
+/* Commpenents */
+.fitb {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.main-btn {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+/* Start NavBar */
+.navbar {
+  background-color: var(--secondary-dark-color) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  transition: var(--main-transition);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--main-color);
+}
+.navbar .search svg {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/* End NavBar */
+
+/* <!-- Start Landing Page --> */
+.landing {
+  background-color: var(--secondary-dark-color);
+  height: calc(100vh - 72px);
+}
+
+/* <!-- End Landing Page --> */
+/* Start Feature */
+
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder svg.num {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder svg.icon {
+  color: var(--main-color);
+}
+
+/* End Feature */
+
+/* Start Our Work */
+.our-work {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #eff7fa;
+}
+.our-work ul .active {
+  background-color: var(--main-color);
+}
+.our-work ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  font-weight: 600;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--main-color);
+}
+
+.our-work .images .row .box::after {
+  content: "Application";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  top: 0;
+  right: 100%;
+  background-color: var(--main-color);
+  opacity: 0.9;
+  transition: var(--main-transition);
+}
+
+.our-work .images .row .box:hover::after {
+  right: 2.5px;
+  top: 2.5px;
+}
+.ga {
+  margin: 10px 0;
+}
+/* End Our Work */
+
+.about-us {
+  padding: 50px 0 0 0;
+}
+
+/* team */
+.team {
+  background-color: #eff7fa;
+}
+.team .ps {
+  width: 100%;
+  background: var(--main-color);
+  padding: 17px;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  font-size: 22px;
+}
+
+/* team */
+
+/* prj */
+.prj {
+  background-color: var(--secondary-dark-color);
+}
+/* prj */
+/* sub */
+.subscribe {
+  background-color: #ffc400;
+}
+
+.subscribe .row .smail {
+  color: white;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.subscribe input[type="submit"] {
+  border: none;
+
+  background-color: #333;
+  color: #ffc400;
+}
+/* sub */
+
+.footer {
+  background-color: #19283f;
+}
